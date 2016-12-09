@@ -8,3 +8,5 @@ function findLongestWord(array) {
 	}
 	return longest
 }
+
+console.log(findLongestWord(wordsArray));
