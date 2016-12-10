@@ -1,8 +1,10 @@
- var no = 5;
+ var no = 8;
 
  function isPrime(num) {
  	result = true;
- 	for (i = 2; i < num; i++ ) {
+  if (num === 1 || num === 2) return true; 
+  //because prime but exceptions to below loop check
+  for (i = 2; i < num; i++ ) {
  		if (num % i === 0) result = false; 
  	}
 	return result;

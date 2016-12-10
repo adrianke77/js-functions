@@ -1,6 +1,7 @@
 function maxOfThree(a,b,c) {
-	let max
+	var max;
 	a > b ? max = a : max = b;
-	max > c ? null : max = c;
-	return max
+	if (max < c) max = c;
+	return max;
 }
+
